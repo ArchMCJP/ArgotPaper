@@ -6,24 +6,31 @@
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>10</version>
+        <version>9</version>
     </parent>
 
-    <groupId>jp.archmc.argotpaper</groupId>
-    <artifactId>argotpaper-parent</artifactId>
+    <groupId>org.github.paperspigot</groupId>
+    <artifactId>paperspigot-parent</artifactId>
     <version>dev-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>ArgotPaper-Parent</name>
-    <description>Parent project for all ArgotPaper modules.</description>
-    <url>https://www.archmc.jp/</url>
+    <name>PaperSpigot-Parent</name>
+    <description>Parent project for all PaperSpigot modules.</description>
+    <url>https://github.com/PaperSpigot/Spigot</url>
 
     <modules>
-        <module>ArgotPaper-Server</module>
-        <module>ArgotPaper-API</module>
+        <module>PaperSpigot-Server</module>
+        <module>PaperSpigot-API</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>md_5-releases</id>
+            <url>http://repo.md-5.net/content/repositories/releases/</url>
+        </repository>
+    </repositories>
 </project>
