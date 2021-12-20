@@ -42,8 +42,5 @@ hash=$(git rev-parse HEAD)
 git branch -f spigot "$hash"
 
 applyPatch Bukkit Spigot-API origin/spigot && applyPatch CraftBukkit Spigot-Server origin/patched
-applyPatch Spigot-Server Migot-Server master
-
-applyPatch Bukkit Spigot-API HEAD && applyPatch CraftBukkit Spigot-Server patched
 applyPatch Spigot-API PaperSpigot-API HEAD && applyPatch Spigot-Server PaperSpigot-Server HEAD
 applyPatch PaperSpigot-API TacoSpigot-API HEAD && applyPatch PaperSpigot-Server TacoSpigot-Server HEAD
